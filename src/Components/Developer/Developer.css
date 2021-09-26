@@ -25,3 +25,6 @@
     font-size: 18px;
     color: #6D757D;
 }
+.social-icon a span:hover{
+  color: blue;
+}

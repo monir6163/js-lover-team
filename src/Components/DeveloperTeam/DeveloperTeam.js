@@ -20,7 +20,7 @@ const DeveloperTeam = () => {
     return (
         <div className="container-fluid mt-5 mb-5">
             <div className="row">
-                <div className="col-md-9 col-lg-9 col-sm-7 dev-data">
+                <div className="col-12 col-lg-9 developersContainer dev-data">
                     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                         {
                             developerteams.map(developer => <Developer key={developer.id} developers={developer}
@@ -31,7 +31,7 @@ const DeveloperTeam = () => {
                     </div>
                 </div>
                 {/* cart row */}
-                <div className="col-md-3 col-lg-3 col-sm-5">
+                <div className="col-10 col-md-6 mx-auto col-lg-3 mt-5 mt-lg-0 cartContainer">
                     <DeveloperHire developer={developerhires}></DeveloperHire>
                 </div>
             </div>
