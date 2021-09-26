@@ -19,9 +19,9 @@ const DeveloperHire = (props) => {
                 <h3>Developer Added: <span className="text-success">{props.developer.length}</span></h3>
                 <h3>Total Salary: <span className="text-success">${total}</span></h3>
             </div>
-            {developer.map((developers, i) =>
-                <div className="cart d-flex justify-content-center align-items-center border border-1 border-muted py-2 ">
-                    <span key={i}>
+            {developer.map((developers) =>
+                <div key={developers.id + Math.random() + " "} className="cart d-flex justify-content-center align-items-center border border-1 border-muted py-2 ">
+                    <span>
                         <h6>{developers.name} <img style={{ height: '30px', width: '30px', borderRadius: '50px' }} src={developers.images} alt={developers.name} /></h6>
                     </span>
                 </div>)
