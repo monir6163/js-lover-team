@@ -1,0 +1,11 @@
+.cart {
+    width: 325px;
+    position:fixed;
+    transition: .3s;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.cart:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
