@@ -4,7 +4,6 @@ import './DeveloperHire.css';
 const DeveloperHire = (props) => {
     // destructuring
     const { developer } = props;
-    console.log(developer)
     let total = 0;
     let developerName = [];
     for (const developers of developer) {
@@ -16,7 +15,7 @@ const DeveloperHire = (props) => {
             <table className="table">
                 <thead>
                     <tr>
-                        <th className="fs-1" scope="col">My-Cart</th>
+                        <th className="cart-header" scope="col">Developer Hire</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>

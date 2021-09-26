@@ -1,5 +1,5 @@
 .cart {
-    width: 325px;
+    width: 312px;
     position:fixed;
     transition: .3s;
     border-radius: 5px;
@@ -8,4 +8,32 @@
 }
 .cart:hover {
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+.cart-header {
+    font-size: 18px;
+    font-weight: bold;
+}
+/* media query */
+@media (max-width:576px) {
+    .cart {
+        order: 1;
+        width: 100%;
+        margin-bottom: 25px;
+        position: relative;
+    }
+    .dev-data {
+        order: 2;
+    }
+}
+@media (max-width:776px){
+    .cart {
+        width: 100%;
+        position: relative;
+    }
+}
+@media (max-width:992px){
+    .cart {
+        width: 100%;
+        position: relative;
+    }
 }
